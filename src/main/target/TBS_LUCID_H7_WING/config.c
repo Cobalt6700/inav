@@ -38,6 +38,7 @@ void targetConfiguration(void)
 {
     pinioBoxConfigMutable()->permanentId[0] = BOX_PERMANENT_ID_USER1;
     pinioBoxConfigMutable()->permanentId[1] = BOX_PERMANENT_ID_USER2;
+    pinioBoxConfigMutable()->permanentId[2] = BOX_PERMANENT_ID_USER3;
     
     modeActivationConditionsMutable(0)->auxChannelIndex = 0;
     modeActivationConditionsMutable(0)->modeId = BOXUSER1;
@@ -48,4 +49,9 @@ void targetConfiguration(void)
     modeActivationConditionsMutable(1)->modeId = BOXUSER2;
     modeActivationConditionsMutable(1)->range.startStep = CHANNEL_VALUE_TO_STEP(CHANNEL_RANGE_MIN);
     modeActivationConditionsMutable(1)->range.endStep = CHANNEL_VALUE_TO_STEP(CHANNEL_RANGE_MAX);
+
+    modeActivationConditionsMutable(2)->auxChannelIndex = 0;
+    modeActivationConditionsMutable(2)->modeId = BOXUSER3;
+    modeActivationConditionsMutable(2)->range.startStep = CHANNEL_VALUE_TO_STEP(CHANNEL_RANGE_MIN);
+    modeActivationConditionsMutable(2)->range.endStep = CHANNEL_VALUE_TO_STEP(CHANNEL_RANGE_MAX);
 }

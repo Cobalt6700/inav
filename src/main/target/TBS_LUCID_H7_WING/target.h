@@ -163,6 +163,7 @@
 #define USE_PINIOBOX
 #define PINIO1_PIN                  PD10 
 #define PINIO2_PIN                  PD11
+#define PINIO2_PIN                  PC13
 
 #define USE_LED_STRIP
 #define WS2811_PIN                  PA15
